@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image19" >
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@+id/textConf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="#CCCCCC"
+        android:text="@string/submit"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/conf"
+        android:ems="10"
+        android:background="#CCCCCC" 
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pass"
+        android:layout_alignBottom="@+id/pass"
+        android:layout_alignLeft="@+id/textTitle"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="#CCCCCC" />
+
+<EditText
+        android:id="@+id/textConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/conf"
+        android:layout_alignBottom="@+id/conf"
+        android:layout_alignLeft="@+id/textPass"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="#CCCCCC" />
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_centerVertical="true"
+        android:text="@string/pass"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#A2FF00" />
+
+    <TextView
+        android:id="@+id/conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="30dp"
+        android:text="@string/conf"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#A2FF00" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textPass"
+        android:layout_marginBottom="32dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#A2FF00" />
+
+    <TextView
+        android:id="@+id/bAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/add"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
